@@ -1,0 +1,5 @@
+colour1 = "#fad5df"
+
+colour2 = "yellow"
+
+colour3 = "#99f1d7"
