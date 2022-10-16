@@ -1,8 +1,6 @@
 
 import './App.css';
-import Home from './Pages/Home';
 import { Box } from '@chakra-ui/react';
-import Navbar from './Componant/Navbar';
 import AllRoutes from "./Routes/AllRoutes"
 
 function App() {
