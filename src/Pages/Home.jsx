@@ -10,6 +10,7 @@ const Home = () => {
     return (
     <Box style={{margin:"0px",padding:"0px",boxSizing:"border-box",width:"100%",height:"750px" }}  >
         <Navbar/>
+        <Text>Site is under maintenance</Text>
         <br/>
         <br/>
         <Test/>
