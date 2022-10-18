@@ -1,5 +1,5 @@
 import { Box, Flex, Image } from "@chakra-ui/react"
-import sujeetPic from "../Img/sujeetPic.jpg"
+
 
 
 const About = () => {
