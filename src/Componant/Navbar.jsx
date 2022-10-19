@@ -1,4 +1,4 @@
-import { Box, Flex, Spacer, Image, useMediaQuery, IconButton, Button, Text } from "@chakra-ui/react"
+import { Box, Flex, Spacer, Image, useMediaQuery, IconButton, Button, Text, Divider } from "@chakra-ui/react"
 import { Link } from "react-router-dom"
 
 import {
@@ -64,7 +64,7 @@ const Navbar = () => {
             }   
             </Box>
         </Flex>
-        <hr/>
+        <Divider orientation='horizontal' />
         </>
     )
 
