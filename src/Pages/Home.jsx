@@ -2,6 +2,7 @@ import { Box, Text } from "@chakra-ui/react"
 import About from "../Componant/About.jsx";
 import Navbar from "../Componant/Navbar.jsx"
 import Test from "../Componant/Test"
+import { color1, color2, color3, color4 } from "../theme/color.js";
 
 
 
@@ -18,6 +19,9 @@ const Home = () => {
         <br/>
         <br/>
         <br/>
+        <Box id="top" bgColor={color4} h="500px" ></Box>
+        <Box id="top1" bgColor={color2} h="500px" ></Box>
+        <Box id="top2" bgColor={color3} h="500px" ></Box>
         
 {/* footer */}
         <Text mt="50px"  >All copyrights reserved to © Sujeet Kumar</Text>
