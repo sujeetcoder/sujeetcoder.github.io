@@ -1,8 +1,14 @@
-/* .App {
-
+*{
+    text-align: center;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
- */
 
-button{
-    background-color: yellow;
+.App {
+    text-align: center;
 }
+
+
+
