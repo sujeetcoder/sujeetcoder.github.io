@@ -2,6 +2,7 @@ import { Box, Text } from "@chakra-ui/react"
 import About from "../Componant/About.jsx";
 import { Home } from "../Componant/Home.jsx";
 import Navbar from "../Componant/Navbar.jsx"
+import Skills from "../Componant/Skills.jsx";
 import Test from "../Componant/Test"
 import {  yellow, last, headline } from "../theme/color.js";
 
@@ -16,6 +17,7 @@ const HomePage = () => {
         <Box padding="30px 5%">
         <Home/>
         <About/>
+        <Skills/>
         
 
 

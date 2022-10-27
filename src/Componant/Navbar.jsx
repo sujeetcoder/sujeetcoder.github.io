@@ -10,7 +10,7 @@ import {
   } from '@chakra-ui/react'
 
   import {  HamburgerIcon } from '@chakra-ui/icons'
-import {  yellow, last , headline } from "../theme/color"
+import {  yellow, headline, red } from "../theme/color"
 
 
 
@@ -19,8 +19,9 @@ const Navbar = () => {
     const [navSmall] = useMediaQuery('(min-width: 800px)')
    
    
-    function toggleClick(value){
+    function toggleClick(id){
        console.log("done")
+       let value = document.getElementById(id)
        window.scrollTo({top:value.offsetTop-90,behavior:"smooth"})
     }
 
@@ -28,7 +29,7 @@ const Navbar = () => {
 
     return (
         <>
-        <Flex p="20px 10px" justifyContent="space-around" pos="sticky" zIndex="50" top="0px"  bgColor={last} gap='2'  >
+        <Flex p="20px 10px" justifyContent="space-around" pos="sticky" zIndex="50" top="0px"  bgColor={red} gap='2'  >
             <Box>
                 <Text style={{ fontWeight:"500px" }} fontSize={["sm","xl","2xl","3xl"]} color={headline} > <b> Sujeet Kumar  </b></Text>
             </Box>
@@ -36,11 +37,11 @@ const Navbar = () => {
 
             <Box>
            { navSmall && <Box   display="flex" alignItems='baseline' gap="15px">
-                <Button onClick={()=>toggleClick(document.getElementById("home"))} bgColor={yellow}  >Home</Button>
-                <Button onClick={()=>toggleClick(document.getElementById("top1"))} bgColor={yellow} >About Me</Button>
-                <Button onClick={()=>toggleClick(document.getElementById("top2"))} bgColor={yellow} >Skills</Button>
-                <Button onClick={()=>toggleClick(document.getElementById("top"))} bgColor={yellow} >Projects</Button>
-                <Button onClick={()=>toggleClick(document.getElementById("top"))} bgColor={yellow} >Contact & Resume</Button>
+                <Button onClick={()=>toggleClick("home")} bgColor={yellow}  >Home</Button>
+                <Button onClick={()=>toggleClick("home")} bgColor={yellow} >About Me</Button>
+                <Button onClick={()=>toggleClick("home")} bgColor={yellow} >Skills</Button>
+                <Button onClick={()=>toggleClick("home")} bgColor={yellow} >Projects</Button>
+                <Button onClick={()=>toggleClick("home")} bgColor={yellow} >Contact & Resume</Button>
             </Box>
             }
             
