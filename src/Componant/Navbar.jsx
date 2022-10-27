@@ -54,7 +54,7 @@ const Navbar = () => {
                variant='outline'
               />
             <MenuList>
-              <MenuItem onClick={()=>toggleClick(document.getElementById("top"))} > Home</MenuItem>
+              <MenuItem onClick={()=>toggleClick("home")} > Home</MenuItem>
               <MenuItem onClick={()=>toggleClick(document.getElementById("top1"))} bgColor={yellow}>About Me</MenuItem>
               <MenuItem onClick={()=>toggleClick(document.getElementById("top2"))} >skills</MenuItem>
               <MenuItem onClick={()=>toggleClick(document.getElementById("top"))} bgColor={yellow}>Projects</MenuItem>
