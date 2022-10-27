@@ -7,7 +7,7 @@ export const Home = () => {
     
     
     return (
-        <Box id="home">
+        <Box id="home" mt="50px">
         <SimpleGrid columns={[1,1,2]} gap={["0%","3%"]} >
             <Box>
                 <Text style={fontStyle} fontSize={["1px","20px","25px","30px","35px"]} >Hello world!</Text>

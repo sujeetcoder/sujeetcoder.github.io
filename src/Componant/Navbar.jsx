@@ -11,20 +11,13 @@ import {
 
   import {  HamburgerIcon } from '@chakra-ui/icons'
 import {  yellow, headline, red } from "../theme/color"
+import { toggleClick } from "../Toggle/ToggleClick"
 
 
 
 
 const Navbar = () => {
     const [navSmall] = useMediaQuery('(min-width: 800px)')
-   
-   
-    function toggleClick(id){
-       console.log("done")
-       let value = document.getElementById(id)
-       window.scrollTo({top:value.offsetTop-90,behavior:"smooth"})
-    }
-
    
 
     return (
@@ -38,10 +31,10 @@ const Navbar = () => {
             <Box>
            { navSmall && <Box   display="flex" alignItems='baseline' gap="15px">
                 <Button onClick={()=>toggleClick("home")} bgColor={yellow}  >Home</Button>
-                <Button onClick={()=>toggleClick("home")} bgColor={yellow} >About Me</Button>
-                <Button onClick={()=>toggleClick("home")} bgColor={yellow} >Skills</Button>
-                <Button onClick={()=>toggleClick("home")} bgColor={yellow} >Projects</Button>
-                <Button onClick={()=>toggleClick("home")} bgColor={yellow} >Contact & Resume</Button>
+                <Button onClick={()=>toggleClick("about")} bgColor={yellow} >About Me</Button>
+                <Button onClick={()=>toggleClick("skills")} bgColor={yellow} >Skills</Button>
+                <Button onClick={()=>toggleClick("projects")} bgColor={yellow} >Projects</Button>
+                <Button onClick={()=>toggleClick("contact")} bgColor={yellow} >Contact & Resume</Button>
             </Box>
             }
             
@@ -55,10 +48,10 @@ const Navbar = () => {
               />
             <MenuList>
               <MenuItem onClick={()=>toggleClick("home")} > Home</MenuItem>
-              <MenuItem onClick={()=>toggleClick(document.getElementById("top1"))} bgColor={yellow}>About Me</MenuItem>
-              <MenuItem onClick={()=>toggleClick(document.getElementById("top2"))} >skills</MenuItem>
-              <MenuItem onClick={()=>toggleClick(document.getElementById("top"))} bgColor={yellow}>Projects</MenuItem>
-              <MenuItem onClick={()=>toggleClick(document.getElementById("top"))} > Contact & Resume</MenuItem>
+              <MenuItem onClick={()=>toggleClick("about")} bgColor={yellow}>About Me</MenuItem>
+              <MenuItem onClick={()=>toggleClick("skills")} >skills</MenuItem>
+              <MenuItem onClick={()=>toggleClick("projects")} bgColor={yellow}>Projects</MenuItem>
+              <MenuItem onClick={()=>toggleClick("contact")} > Contact & Resume</MenuItem>
             </MenuList>
           </Menu>
             }   

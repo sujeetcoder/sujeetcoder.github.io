@@ -9,7 +9,7 @@ export const fontStyle = {
 
 export const fontStyle2 = {
     color:red,
-    fontSize:"40px",
+    fontSize:"30px",
     fontWeight:"bold"
     
 }
