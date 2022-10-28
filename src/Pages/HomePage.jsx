@@ -1,6 +1,7 @@
 import { Box, Text } from "@chakra-ui/react"
 import About from "../Componant/About.jsx";
 import { Contact } from "../Componant/Contact.jsx";
+import { HireMe } from "../Componant/HireMe.jsx";
 import { Home } from "../Componant/Home.jsx";
 import Navbar from "../Componant/Navbar.jsx"
 import Projects from "../Componant/Projects.jsx";
@@ -22,6 +23,7 @@ const HomePage = () => {
         <Skills/>
         <Projects/>
         <Contact/>
+        <HireMe/>
         
 
 

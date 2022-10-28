@@ -18,7 +18,7 @@ const Projects = () => {
                     <Image src={freshly} alt="alt" />
                     <Text color={red} >Freshly.com (individual)</Text>
                     <Text><b>Tech-Stack used: ReactJS, Chakra UI, REST API, Axios.</b></Text>
-                    <Flex>
+                    <Flex flexDirection={["column","column","row","row","row"]} >
                     <a href="https://github.com/sujeetcoder/dainty-knee-9326" target="_blank" > <Button m="2%" bgColor={yellow}>Github</Button> </a>
                     <a href="https://delightful-dango-efae26.netlify.app/" target="_blank" > <Button m="2%" bgColor={yellow}>Deploy link</Button> </a>
                     </Flex>
@@ -26,17 +26,17 @@ const Projects = () => {
                 <Box style={{boxShadow:"rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px"}} >
                     <Image src={pharma} alt="alt" />
                     <Text color={red} >Pharmaeasy (Group)</Text>
-                    <Text><b>Tech-Stack used: HTML, CSS, JavaScript(ES6&ES5)</b></Text>
-                    <Flex>
+                    <Text><b>Tech-Stack used: HTML, CSS, JavaScript (ES6&ES5)</b></Text>
+                    <Flex flexDirection={["column","column","row","row","row"]}>
                     <a href="https://github.com/shiivaniiawasthii/jumpy-pigs-3147" target="_blank" > <Button m="2%" bgColor={yellow}>Github</Button> </a>
                     <a href="https://euphonious-profiterole-0d7e49.netlify.app/" target="_blank" > <Button m="2%" bgColor={yellow}>Deploy link</Button> </a>
                     </Flex>
                 </Box>
                 <Box style={{boxShadow:"rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px"}} >
                     <Image src={belavita} alt="alt" />
-                    <Text color={red} >Bellavita.com (individual)</Text>
-                    <Text><b>Tech-Stack used: HTML, CSS, JavaScript(ES5)</b></Text>
-                    <Flex>
+                    <Text color={red} >Bellavita.com (Group)</Text>
+                    <Text><b>Tech-Stack used: HTML, CSS, JavaScript (ES5)</b></Text>
+                    <Flex flexDirection={["column","column","row","row","row"]}>
                     <a href="https://github.com/sujeetcoder/bellavitaproject1" target="_blank" > <Button m="2%" bgColor={yellow}>Github</Button> </a>
                     <a href="https://jazzy-tulumba-87100d.netlify.app/" target="_blank" > <Button m="2%" bgColor={yellow}>Deploy link</Button> </a>
                     </Flex>

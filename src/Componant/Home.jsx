@@ -1,5 +1,6 @@
 import { Box,  Button,  Flex,  Image, SimpleGrid, Spacer, Text } from "@chakra-ui/react"
 import {  red, yellow } from "../theme/color"
+import { toggleClick } from "../Toggle/ToggleClick"
 import { fontStyle } from "./fontStyle"
 /* import {fontStyle} from "./fontStyle.js" */
 
@@ -14,9 +15,9 @@ export const Home = () => {
                 <Text fontSize={["xl","2xl","3xl"]}>I am Sujeet Kumar </Text>
                 <Text color={red} fontSize="2xl">"Full Stack Web Developer"</Text>
                 <Flex mt="25px" flexDirection={["column","row"]}>
-                    <Button m="2%" bgColor={yellow} >Hire Me</Button>
+                    <Button onClick={()=>toggleClick("hireme")} m="2%" bgColor={yellow} >Hire Me</Button>
                     <Spacer/>
-                  <a href="https://drive.google.com/file/d/1XXfPSaz_NJGaGiyQTq0w_aqqCco3TwM5/view?usp=sharing" target="_blank" > <Button m="2%" bgColor={yellow}>Get CV</Button> </a> 
+                <Button onClick={()=>toggleClick("resume")} m="2%" bgColor={yellow}>Get CV</Button>
                 </Flex>
             </Box>
             <Box>
