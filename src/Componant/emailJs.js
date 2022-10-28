@@ -6,41 +6,53 @@ import {
     Input,
     Box,
     Textarea,
+    Button,
   } from '@chakra-ui/react'
 
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { headline, red, yellow } from '../theme/color';
+import { headline, yellow } from '../theme/color';
 
 export const ContactUs = () => {
   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-    console.log("hhhhh")
-    /* emailjs.sendForm('service_3uomgux', 'template_pvagz2o', form.current, 'D7VO2Sz3ljOslaxDo')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      }); */
-  };
-
-  /* second */
   const [input, setInput] = useState('')
   const [name, setName] = useState('')
+  const [message,setMessage] = useState('')
 
   const handleInputChange = (e) => setInput(e.target.value)
   const handleNameChange = (e) => setName(e.target.value)
+  const handleMessChange = (e) => setMessage(e.target.value)
 
   const isError = input === ''
   const isError2 = name === ''
 
+  const sendEmail = (e) => {
+    /* e.preventDefault(); */
+    console.log("hhhhh")
+    let data = {
+      user_name:name,
+      user_email:input,
+      message:message
+    }
+    console.log(data)
+    console.log(e.target)
+    emailjs.sendForm('service_3uomgux', 'template_pvagz2o', form, 'D7VO2Sz3ljOslaxDo')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
+  
+  
+
   return (
     <Box w={["80%","70%","60%","50%","40%"]} >
-    <FormControl isInvalid={isError}   ref={form} onSubmit={sendEmail}>
+    <FormControl isInvalid={isError}   ref={form} >
       <FormLabel>Name</FormLabel>
-      <Input color={headline} placeholder='Name' bgColor="white" type="text" name="user_name" onChange={handleNameChange} />
+      <Input color={headline} placeholder='Name' bgColor="white" type="text" name="user_name" value={name} onChange={handleNameChange} />
       {!isError2 ? (
         <FormHelperText>
           Enter your name for future reference
@@ -59,8 +71,8 @@ export const ContactUs = () => {
       )}
       
       <FormLabel>Message</FormLabel>
-      <Textarea color={headline} placeholder='Message' bgColor="white" name="message" />
-      <Input disabled={isError||isError2} mt="20px" bgColor={yellow} type="submit" value="Send" />
+      <Textarea onChange={handleMessChange} color={headline} placeholder='Message' bgColor="white" name="message" value={message} />
+      <Button disabled={isError||isError2} mt="20px" bgColor={yellow} onClick={sendEmail} > Send </Button>
     </FormControl>
     </Box>
   );
