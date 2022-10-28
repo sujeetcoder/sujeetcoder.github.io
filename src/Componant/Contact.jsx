@@ -38,7 +38,7 @@ export const Contact = () => {
                 </Box> </a>
 
             </SimpleGrid>
-            <Button id="resume"  size={["sm","sm","md","lg"]} mt={["200px","100px","70px","60px"]} bgColor={yellow} >Download My Resume</Button>
+            <a  href="../Img/pro1.png" download="Sujeet_Kumar_Resume.png" >   <Button id="resume"  size={["sm","md","lg","lg"]} mt={["200px","100px","70px","60px"]} bgColor={yellow} >Download My Resume</Button> </a>
         </Box>
     )
 }
