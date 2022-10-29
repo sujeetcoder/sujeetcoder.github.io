@@ -1,4 +1,4 @@
-import { Box, Flex, Image, SimpleGrid, Spacer, Text } from "@chakra-ui/react"
+import { Box, Button, Flex, Image, SimpleGrid, Spacer, Text } from "@chakra-ui/react"
 import { fontStyle, fontStyle2 } from "./fontStyle";
 
 
@@ -8,14 +8,17 @@ const About = () => {
 
     return (
         <Box >
-        <Text mt="170px" style={fontStyle}>About Me</Text>
+        
+        <Text  style={fontStyle}>About Me</Text>
         <Box id="about"  w={["98%","95%","70%","60%","50%"]}>
-           <Text  m="auto" fontSize="xl">Analytical and detail-oriented aspiring
-Full Stack Web Developer. Capable of
-writing production-ready code using
-MERN stack. Passionate about coding
-and intensely interested in working in a
-product-based company.</Text>
+           <Text  m="auto" fontSize="xl">
+                Analytical and detail-oriented aspiring
+                Full Stack Web Developer. Capable of
+                writing production-ready code using
+                MERN stack. Passionate about coding
+                and intensely interested in working in a
+                product-based company.
+           </Text>
       </Box>
 <p align="center"  >
           <img src="https://readme-typing-svg.demolab.com/?lines=hi! My self Sujeet Kumar 🏽; I am a Full-stack%20web%20developer 🏻‍💻; interested in Coding 🏃‍♂️♂️;Curious%20to%20learn%20new%20things !&font=Fira%20Code&center=true&width=580&height=45&color=37bcf7&vCenter=true&size=22&pause=1000" />
