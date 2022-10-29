@@ -2,6 +2,7 @@ import { Box, Button, Image, SimpleGrid, Text } from "@chakra-ui/react"
 import { yellow } from "../theme/color"
 import { ToastExample } from "../toast/ToastContact"
 import { fontStyle } from "./fontStyle"
+import resume from "../Img/pro1.png"
 
 
 export const Contact = () => {
@@ -38,7 +39,7 @@ export const Contact = () => {
                 </Box> </a>
 
             </SimpleGrid>
-            <a  href="../Img/pro1.png" download="Sujeet_Kumar_Resume.png" >   <Button id="resume"  size={["sm","md","lg","lg"]} mt={["200px","100px","70px","60px"]} bgColor={yellow} >Download My Resume</Button> </a>
+            <a  href={resume} download="Sujeet_Kumar_Resume.png" >   <Button id="resume"  size={["sm","md","lg","lg"]} mt={["200px","100px","70px","60px"]} bgColor={yellow} >Download My Resume</Button> </a>
         </Box>
     )
 }
