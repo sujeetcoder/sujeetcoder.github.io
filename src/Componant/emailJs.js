@@ -37,7 +37,7 @@ export const ContactUs = () => {
     }
     console.log(data)
     console.log(e.target)
-    emailjs.sendForm('service_3uomgux', 'template_pvagz2o', form, 'D7VO2Sz3ljOslaxDo')
+    emailjs.send('service_3uomgux', 'template_pvagz2o', data, 'D7VO2Sz3ljOslaxDo')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
