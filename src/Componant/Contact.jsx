@@ -2,7 +2,8 @@ import { Box, Button, Image, SimpleGrid, Text } from "@chakra-ui/react"
 import { yellow } from "../theme/color"
 import { ToastExample } from "../toast/ToastContact"
 import { fontStyle } from "./fontStyle"
-import resume from "../Img/pro1.png"
+import resume from "../pdf/Sujeet_Kumar_Resume.pdf"
+
 
 
 export const Contact = () => {
@@ -10,8 +11,8 @@ export const Contact = () => {
     return (
         <Box id="contact" mt="170px" mb="120px">
             <Text style={fontStyle} mb="20px" >Contact & Resume</Text>
-            <SimpleGrid columns={[1,2,2,3,3]} gap="5%">
-            <ToastExample des="Bettiah, Bihar, India" name='Address' >        <Box borderRadius="10px" bgColor="white" >
+            <SimpleGrid columns={[1,2,2,3,3]} gap="5%" mb={["200px","100px","70px","60px"]}>
+            <ToastExample des="Vill- Behari Chapariya Tola,P.O-Rampur,P.S-Bhangaha,Bettiah, Bihar, India" name='Address' >        <Box borderRadius="10px" bgColor="white" >
                     <Image w="70px" h="70px" src="https://cdn4.vectorstock.com/i/1000x1000/33/28/location-icon-map-address-geographical-position-vector-29053328.jpg" />
                     <Text>Bettiah, Bihar, India</Text>
                 </Box> </ToastExample>
@@ -39,7 +40,13 @@ export const Contact = () => {
                 </Box> </a>
 
             </SimpleGrid>
-            <a  href={resume} download="Sujeet_Kumar_Resume.png" >   <Button id="resume"  size={["sm","md","lg","lg"]} mt={["200px","100px","70px","60px"]} bgColor={yellow} >Download My Resume</Button> </a>
+            <a  href={resume} download="Sujeet_Kumar_Resume.pdf" >   <Button id="resume"  size={["sm","md","lg","lg"]}  bgColor={yellow} >Download My Resume</Button> </a>
+
+            <Box w={["98%","80%","70%","60%"]} h={["330px","480px","560px","750px","950px","1200px"]}>
+                <embed  width="100%" height="100%" src={resume} />
+            </Box>
+
+            <a  href={resume} download="Sujeet_Kumar_Resume.pdf" >   <Button id="resume"  size={["sm","md","lg","lg"]}  bgColor={yellow} >Download My Resume</Button> </a>
         </Box>
     )
 }
