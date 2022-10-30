@@ -43,7 +43,9 @@ export const Contact = () => {
             <a  href={resume} download="Sujeet_Kumar_Resume.pdf" >   <Button id="resume"  size={["sm","md","lg","lg"]}  bgColor={yellow} >Download My Resume</Button> </a>
 
             <Box w={["98%","80%","70%","60%"]} h={["330px","480px","560px","750px","950px","1200px"]}>
-                <embed  width="100%" height="100%" src={resume} />
+                {/* <embed  width="100%" height="100%" src={resume} /> */}
+                <object data={resume} type="application/pdf" width="100%" height="100%" ></object>
+                
             </Box>
 
             <a  href={resume} download="Sujeet_Kumar_Resume.pdf" >   <Button id="resume"  size={["sm","md","lg","lg"]}  bgColor={yellow} >Download My Resume</Button> </a>
