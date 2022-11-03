@@ -18,6 +18,7 @@ const Projects = () => {
                     <Image src={freshly} alt="alt" />
                     <Text color={red} >Freshly.com (individual)</Text>
                     <Text><b>Tech-Stack used: ReactJS, Chakra UI, REST API, Axios.</b></Text>
+                    <Text mb="20px">A react web application project to deliver food items</Text>
                     <Flex flexDirection={["column","column","row","row","row"]} >
                     <a href="https://github.com/sujeetcoder/dainty-knee-9326" target="_blank" > <Button m="2%" bgColor={yellow}>Github</Button> </a>
                     <a href="https://delightful-dango-efae26.netlify.app/" target="_blank" > <Button m="2%" bgColor={yellow}>Deploy link</Button> </a>
@@ -27,6 +28,7 @@ const Projects = () => {
                     <Image src={pharma} alt="alt" />
                     <Text color={red} >Pharmaeasy (Group)</Text>
                     <Text><b>Tech-Stack used: HTML, CSS, JavaScript (ES6&ES5)</b></Text>
+                    <Text mb="20px">A web application project to deliver Medicines</Text>
                     <Flex flexDirection={["column","column","row","row","row"]}>
                     <a href="https://github.com/shiivaniiawasthii/jumpy-pigs-3147" target="_blank" > <Button m="2%" bgColor={yellow}>Github</Button> </a>
                     <a href="https://euphonious-profiterole-0d7e49.netlify.app/" target="_blank" > <Button m="2%" bgColor={yellow}>Deploy link</Button> </a>
@@ -36,6 +38,7 @@ const Projects = () => {
                     <Image src={belavita} alt="alt" />
                     <Text color={red} >Bellavita.com (Group)</Text>
                     <Text><b>Tech-Stack used: HTML, CSS, JavaScript (ES5)</b></Text>
+                    <Text mb="20px">A web application project to deliver Medicines </Text>
                     <Flex flexDirection={["column","column","row","row","row"]}>
                     <a href="https://github.com/sujeetcoder/bellavitaproject1" target="_blank" > <Button m="2%" bgColor={yellow}>Github</Button> </a>
                     <a href="https://jazzy-tulumba-87100d.netlify.app/" target="_blank" > <Button m="2%" bgColor={yellow}>Deploy link</Button> </a>

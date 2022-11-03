@@ -17,7 +17,7 @@ import { toggleClick } from "../Toggle/ToggleClick"
 
 
 const Navbar = () => {
-    const [navSmall] = useMediaQuery('(min-width: 800px)')
+    const [navMid] = useMediaQuery('(min-width: 800px)')
    
 
     return (
@@ -29,7 +29,7 @@ const Navbar = () => {
             <Spacer/>
 
             <Box>
-           { navSmall && <Box   display="flex" alignItems='baseline' gap="15px">
+           { navMid && <Box   display="flex" alignItems='baseline' gap="15px">
                 <Button onClick={()=>toggleClick("home")} bgColor={yellow}  >Home</Button>
                 <Button onClick={()=>toggleClick("about")} bgColor={yellow} >About Me</Button>
                 <Button onClick={()=>toggleClick("skills")} bgColor={yellow} >Skills</Button>
@@ -39,7 +39,7 @@ const Navbar = () => {
             }
             
             { 
-            !navSmall && <Menu>
+            !navMid && <Menu>
             <MenuButton
               as={IconButton}
               aria-label='Options'
