@@ -21,7 +21,7 @@ const About = () => {
            </Text>
       </Box>
 <p align="center"  >
-          <img src="https://readme-typing-svg.demolab.com/?lines=hi! My self Sujeet Kumar 🏽; I am a Full-stack%20web%20developer 🏻‍💻; interested in Coding 🏃‍♂️♂️;Curious%20to%20learn%20new%20things !&font=Fira%20Code&center=true&width=580&height=45&color=37bcf7&vCenter=true&size=22&pause=1000" />
+          <img src="https://readme-typing-svg.demolab.com/?lines=hi! My self Sujeet Kumar 🏽; I am a Full-stack%20web%20developer 🏻‍💻; interested in Coding 🏃‍♂️♂️;Curious%20to%20learn%20new%20things !&font=Fira%20Code&center=true&width=580&height=45&color=f20353&vCenter=true&size=22&pause=1000" />
       </p>
       <Text style={fontStyle2} >My GitHub Stats</Text>
       <SimpleGrid columns={[1,2,2,4,4]} gap="4%">

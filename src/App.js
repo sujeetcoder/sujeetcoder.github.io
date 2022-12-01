@@ -7,7 +7,7 @@ import { background } from './theme/color';
 function App() {
   
   return (
-    <Box bgColor={background} style={{margin:"0px",padding:"0px",boxSizing:"border-box",width:"100%",textAlign:"center" }} w="100%"  className="App">
+    <Box bgColor={"white"} style={{margin:"0px",padding:"0px",boxSizing:"border-box",width:"100%",textAlign:"center" }} w="100%"  className="App">
       <AllRoutes/>
     </Box>
   );

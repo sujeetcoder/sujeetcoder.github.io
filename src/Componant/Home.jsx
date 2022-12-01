@@ -15,9 +15,9 @@ export const Home = () => {
                 <Text fontSize={["xl","2xl","3xl"]}>I am Sujeet Kumar </Text>
                 <Text color={red} fontSize="2xl">"Full Stack Web Developer"</Text>
                 <Flex mt="25px" flexDirection={["column","row"]}>
-                    <Button onClick={()=>toggleClick("hireme")} m="2%" bgColor={yellow} >Hire Me</Button>
+                <Button onClick={()=>toggleClick("hireme")} m="2%" bgColor={yellow} >Hire Me</Button>
                     <Spacer/>
-                <Button onClick={()=>toggleClick("resume")} m="2%" bgColor={yellow}>Get CV</Button>
+                <a target="_blank" href="https://drive.google.com/file/d/1mAXvUM_FT60NaGoP8ERlny-sripoR6Eu/view?usp=share_link" > <Button /* onClick={()=>toggleClick("resume")}  */m="2%" bgColor={yellow}>Get CV</Button> </a>
                 </Flex>
             </Box>
             <Box>

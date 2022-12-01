@@ -42,7 +42,7 @@ const HomePage = () => {
         
 {/* footer */}
         <p style={{marginTop:"60px"}} align="center"  >
-          <img src="https://readme-typing-svg.demolab.com/?lines=Thanks For Visit..... !&font=Fira%20Code&center=true&width=580&height=45&color=#f20353&vCenter=true&size=22&pause=1500" />
+          <img src="https://readme-typing-svg.demolab.com/?lines=Thanks For Visit..... !&font=Fira%20Code&center=true&width=580&height=45&color=f20353&vCenter=true&size=22&pause=1500" />
         </p>
         <Text mt="50px"   >All copyrights reserved to © Sujeet Kumar</Text>
         </Box>
