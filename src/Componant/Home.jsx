@@ -3,6 +3,7 @@ import {  red, yellow } from "../theme/color"
 import { toggleClick } from "../Toggle/ToggleClick"
 import { fontStyle } from "./fontStyle"
 /* import {fontStyle} from "./fontStyle.js" */
+import resume from "../pdf/Sujeet_Kumar_Resume.pdf"
 
 export const Home = () => {
     
@@ -17,7 +18,7 @@ export const Home = () => {
                 <Flex mt="25px" flexDirection={["column","row"]}>
                 <Button onClick={()=>toggleClick("hireme")} m="2%" bgColor={yellow} >Hire Me</Button>
                     <Spacer/>
-                <a target="_blank" href="https://drive.google.com/file/d/1mAXvUM_FT60NaGoP8ERlny-sripoR6Eu/view?usp=share_link" > <Button /* onClick={()=>toggleClick("resume")}  */m="2%" bgColor={yellow}>Get CV</Button> </a>
+                <a target="_blank" href={resume} download="Sujeet_Kumar_Resume.pdf" > <Button /* onClick={()=>toggleClick("resume")}  */m="2%" bgColor={yellow}>Get CV</Button> </a>
                 </Flex>
             </Box>
             <Box>

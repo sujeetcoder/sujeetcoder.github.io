@@ -41,11 +41,11 @@ export const Contact = () => {
                 </Box> </a>
 
             </SimpleGrid>
-            <a  href={"https://drive.google.com/file/d/1mAXvUM_FT60NaGoP8ERlny-sripoR6Eu/view?usp=sharing"} download="Sujeet_Kumar_Resume.pdf" >   <Button id="resume"  size={["sm","md","lg","lg"]}  bgColor={yellow} >Download My Resume</Button> </a>
+     {/*        <a  href={resume} download="Sujeet_Kumar_Resume.pdf" >   <Button id="resume"  size={["sm","md","lg","lg"]}  bgColor={yellow} >Download My Resume</Button> </a>
         {navMid && 
         <Box>
             <Box w={["98%","80%","70%","60%"]} h={["330px","480px","560px","750px","950px","1200px"]}>
-                {/* <embed  width="100%" height="100%" src={resume} /> */}
+               
                 <object data={resume} type="application/pdf" width="100%" height="100%" ></object>
                 
             </Box>
@@ -53,7 +53,7 @@ export const Contact = () => {
             <a  href={"https://drive.google.com/file/d/1mAXvUM_FT60NaGoP8ERlny-sripoR6Eu/view?usp=sharing"} download="Sujeet_Kumar_Resume.pdf" >   <Button id="resume"  size={["sm","md","lg","lg"]}  bgColor={yellow} >Download My Resume</Button> </a>
             </Box>
         }
-        
+         */}
         </Box>
     )
 }

@@ -12,6 +12,7 @@ import {
   import {  HamburgerIcon } from '@chakra-ui/icons'
 import {  yellow, headline, red } from "../theme/color"
 import { toggleClick } from "../Toggle/ToggleClick"
+import resume from "../pdf/Sujeet_Kumar_Resume.pdf"
 
 
 
@@ -34,7 +35,8 @@ const Navbar = () => {
                 <Button onClick={()=>toggleClick("about")} bgColor={yellow} >About Me</Button>
                 <Button onClick={()=>toggleClick("skills")} bgColor={yellow} >Skills</Button>
                 <Button onClick={()=>toggleClick("projects")} bgColor={yellow} >Projects</Button>
-                <Button onClick={()=>toggleClick("contact")} bgColor={yellow} >Contact & Resume</Button>
+                <Button onClick={()=>toggleClick("contact")} bgColor={yellow} >Contact</Button>
+                <a  href={resume} download="Sujeet_Kumar_Resume.pdf" > <Button /* onClick={()=>toggleClick("resume")} */ bgColor={yellow} >Resume</Button> </a>
             </Box>
             }
             
@@ -51,7 +53,8 @@ const Navbar = () => {
               <MenuItem onClick={()=>toggleClick("about")} bgColor={yellow}>About Me</MenuItem>
               <MenuItem onClick={()=>toggleClick("skills")} >skills</MenuItem>
               <MenuItem onClick={()=>toggleClick("projects")} bgColor={yellow}>Projects</MenuItem>
-              <MenuItem onClick={()=>toggleClick("contact")} > Contact & Resume</MenuItem>
+              <MenuItem onClick={()=>toggleClick("contact")} > Contact</MenuItem>
+              <a  href={resume} download="Sujeet_Kumar_Resume.pdf" > <MenuItem /* onClick={()=>toggleClick("contact")}  */ bgColor={yellow}> Resume</MenuItem> </a>
             </MenuList>
           </Menu>
             }   

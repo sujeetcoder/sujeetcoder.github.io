@@ -14,7 +14,7 @@ const Projects = () => {
         <Box boxSizing="border-box" id="projects" mt="70px" mb="130px" >
             <Text mb="20px" style={fontStyle} >Projects</Text>
             <SimpleGrid columns={[1,1,3,3,3]} gap="5%">
-                <Box style={{boxShadow:"rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px"}} >
+                <Box style={{boxShadow:"rgba(3, 102, 214, 0.3) 0px 0px 0px 3px",padding:"3% 2%"}} >
                     <Image src={freshly} alt="alt" />
                     <Text color={red} >Freshly.com (individual)</Text>
                     <Text style={{height:"65px",width:"100%"}}><b>Tech-Stack used: ReactJS, Chakra UI, REST API, Axios.</b></Text>
@@ -24,7 +24,7 @@ const Projects = () => {
                     <a href="https://delightful-dango-efae26.netlify.app/" target="_blank" > <Button m="2%" bgColor={yellow}>Deploy link</Button> </a>
                     </Flex>
                 </Box>
-                <Box style={{boxShadow:"rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px"}} >
+                <Box style={{boxShadow:"rgba(3, 102, 214, 0.3) 0px 0px 0px 3px",padding:"3% 2%"}} >
                     <Image src={pharma} alt="alt" />
                     <Text color={red} >Pharmaeasy (Group)</Text>
                     <Text style={{height:"65px",width:"100%"}}><b>Tech-Stack used: HTML, CSS, JavaScript (ES6&ES5)</b></Text>
@@ -34,7 +34,7 @@ const Projects = () => {
                     <a href="https://euphonious-profiterole-0d7e49.netlify.app/" target="_blank" > <Button m="2%" bgColor={yellow}>Deploy link</Button> </a>
                     </Flex>
                 </Box>
-                <Box style={{boxShadow:"rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px"}} >
+                <Box style={{boxShadow:"rgba(3, 102, 214, 0.3) 0px 0px 0px 3px",padding:"3% 2%"}} >
                     <Image src={belavita} alt="alt" />
                     <Text color={red} >Bellavita.com (Group)</Text>
                     <Text style={{height:"65px",width:"100%"}}><b>Tech-Stack used: HTML, CSS, JavaScript (ES5)</b></Text>
