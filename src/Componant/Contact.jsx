@@ -11,7 +11,7 @@ export const Contact = () => {
 
     return (
         <Box id="contact" mt="170px" mb="120px">
-            <Text style={fontStyle} mb="20px" >Contact & Resume</Text>
+            <Text style={fontStyle} mb="20px" >Contact</Text>
             <SimpleGrid columns={[1,2,2,3,3]} gap="5%" mb={["200px","100px","70px","60px"]}>
            {/*  <ToastExample des="Vill- Behari Chapariya Tola,P.O-Rampur,P.S-Bhangaha,Bettiah, Bihar, India" name='Address' >  */}       <Box borderRadius="10px" bgColor="white" >
                     <Image w="70px" h="70px" src="https://cdn4.vectorstock.com/i/1000x1000/33/28/location-icon-map-address-geographical-position-vector-29053328.jpg" />

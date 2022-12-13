@@ -1,9 +1,11 @@
 import { Box, Button, Flex, Image, SimpleGrid, Spacer, Text } from "@chakra-ui/react"
 import { fontStyle, fontStyle2 } from "./fontStyle";
-
+import GitHubCalendar from "react-github-calendar";
 
 
 const About = () => {
+
+    
 
 
     return (
@@ -30,7 +32,13 @@ const About = () => {
       <Image src="https://camo.githubusercontent.com/4b578c71142e9cea1d94437fa4fc2685c21191e9ba17247529dd545809d1904a/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d73756a656574636f6465722673686f775f69636f6e733d74727565266c6f63616c653d656e267468656d653d726561637426686964655f626f726465723d747275652662675f636f6c6f723d304431313137" />
       <Image src="https://camo.githubusercontent.com/c4005e4917c659a6b4d5d64d8118ad0965679115b1010f6f9126bb489123cd64/68747470733a2f2f61637469766974792d67726170682e6865726f6b756170702e636f6d2f67726170683f757365726e616d653d73756a656574636f6465722662675f636f6c6f723d30443131313726636f6c6f723d354243444543266c696e653d35424344454326706f696e743d46464646464626686964655f626f726465723d74727565" />
       </SimpleGrid>
-        </Box>
+      <br/>
+      <br/>
+      <Box>
+        <GitHubCalendar username="sujeetcoder" />
+      </Box>
+        
+    </Box>
         
     )
 }
