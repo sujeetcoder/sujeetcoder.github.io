@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom"
 import HomePage from "../Pages/HomePage"
 import PagenotFound from "../Pages/PageNotFound"
+import Test2 from "../Pages/Test2"
 
 
 const AllRoutes = () => {
@@ -8,6 +9,7 @@ const AllRoutes = () => {
     <Routes>
         <Route path="/" element={<HomePage/>} ></Route>
         <Route path="*" element={<PagenotFound/>} ></Route>
+        <Route path="test" element={<Test2/>}></Route>
     </Routes>
     )
 }

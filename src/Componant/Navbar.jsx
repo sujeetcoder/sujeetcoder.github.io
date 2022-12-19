@@ -19,6 +19,9 @@ import resume from "../pdf/Sujeet_Kumar_Resume.pdf"
 
 const Navbar = () => {
     const [navMid] = useMediaQuery('(min-width: 800px)')
+    const toggleClick = () => {
+      window.open('https://drive.google.com/file/d/1mAXvUM_FT60NaGoP8ERlny-sripoR6Eu/view?usp=share_link')
+    }
    
 
     return (
@@ -36,7 +39,7 @@ const Navbar = () => {
                 <Button onClick={()=>toggleClick("skills")} bgColor={yellow} >Skills</Button>
                 <Button onClick={()=>toggleClick("projects")} bgColor={yellow} >Projects</Button>
                 <Button onClick={()=>toggleClick("contact")} bgColor={yellow} >Contact</Button>
-                <a  href={resume} download="Sujeet_Kumar_Resume.pdf" > <Button /* onClick={()=>toggleClick("resume")} */ bgColor={yellow} >Resume</Button> </a>
+                <a  href={resume} download="Sujeet_Kumar_Resume.pdf" > <Button onClick={()=>toggleClick()} bgColor={yellow} >Resume</Button> </a>
             </Box>
             }
             
@@ -54,7 +57,7 @@ const Navbar = () => {
               <MenuItem onClick={()=>toggleClick("skills")} >skills</MenuItem>
               <MenuItem onClick={()=>toggleClick("projects")} bgColor={yellow}>Projects</MenuItem>
               <MenuItem onClick={()=>toggleClick("contact")} > Contact</MenuItem>
-              <a  href={resume} download="Sujeet_Kumar_Resume.pdf" > <MenuItem /* onClick={()=>toggleClick("contact")}  */ bgColor={yellow}> Resume</MenuItem> </a>
+              <a  href={resume} download="Sujeet_Kumar_Resume.pdf" > <MenuItem onClick={()=>toggleClick()} bgColor={yellow}> Resume</MenuItem> </a>
             </MenuList>
           </Menu>
             }   
