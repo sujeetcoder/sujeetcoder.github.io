@@ -109,7 +109,7 @@ export const ContactUs = () => {
       <Button disabled={isError||isError2||sendMail} mt="20px" bgColor={yellow} onClick={sendEmail} > Send </Button>
     </FormControl>
     {
-    sendMail && <Text mt="20px" color={headline} > You allready sended a email to us. Please wait for response from my side. Thanks! </Text>
+    sendMail && <Text mt="20px" color={headline} > You allready sent a email to us. Please wait for response from my side. Thanks! </Text>
     }
     </Box>
   );
