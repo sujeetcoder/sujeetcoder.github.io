@@ -6,7 +6,9 @@ import { fontStyle } from "./fontStyle"
 import resume from "../pdf/Sujeet_Kumar_Resume.pdf"
 
 export const Home = () => {
-    
+    const toggleClick2 = () => {
+        window.open('https://drive.google.com/file/d/1mAXvUM_FT60NaGoP8ERlny-sripoR6Eu/view?usp=share_link')
+      }
     
     return (
         <Box id="home" mt="50px">
@@ -18,7 +20,7 @@ export const Home = () => {
                 <Flex mt="25px" flexDirection={["column","row"]}>
                 <Button onClick={()=>toggleClick("hireme")} m="2%" bgColor={yellow} >Hire Me</Button>
                     <Spacer/>
-                <a target="_blank" href={resume} download="Sujeet_Kumar_Resume.pdf" > <Button /* onClick={()=>toggleClick("resume")}  */m="2%" bgColor={yellow}>Get CV</Button> </a>
+                <a target="_blank" href={resume} download="Sujeet_Kumar_Resume.pdf" > <Button onClick={toggleClick2} m="2%" bgColor={yellow}>Get CV</Button> </a>
                 </Flex>
             </Box>
             <Box>

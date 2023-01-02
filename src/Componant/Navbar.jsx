@@ -39,7 +39,7 @@ const Navbar = () => {
                 <Button onClick={()=>toggleClick("skills")} bgColor={yellow} >Skills</Button>
                 <Button onClick={()=>toggleClick("projects")} bgColor={yellow} >Projects</Button>
                 <Button onClick={()=>toggleClick("contact")} bgColor={yellow} >Contact</Button>
-                <a  href={resume} download="Sujeet_Kumar_Resume.pdf" > <Button onClick={()=>toggleClick2()} bgColor={yellow} >Resume</Button> </a>
+                <a  href={resume} download="Sujeet_Kumar_Resume.pdf" > <Button onClick={toggleClick2} bgColor={yellow} >Resume</Button> </a>
             </Box>
             }
             
