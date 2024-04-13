@@ -1,19 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.825872d8.css",
-    "main.js": "/static/js/main.736020ca.js",
-    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "main.js": "/static/js/main.6fc137a0.js",
+    "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/pro1.png": "/static/media/pro1.f571305d5ca550f9c8ad.png",
-    "static/media/pro2.png": "/static/media/pro2.7e9525c57491918ef537.png",
-    "static/media/pro3.png": "/static/media/pro3.c1d6127b53a6aa083b2f.png",
-    "static/media/Sujeet_Kumar_Resume.pdf": "/static/media/Sujeet_Kumar_Resume.b5dfc79511286170d4d0.pdf",
+    "static/media/pro2.png": "/static/media/pro2.2c4f3c69d25f63dc9f20.png",
+    "static/media/pro3.png": "/static/media/pro3.4ed897e8f7e4522a2f79.png",
+    "static/media/arrow.png": "/static/media/arrow.3bceb78ef52c16b12423.png",
+    "static/media/Sujeet_Kumar_Resume.pdf": "/static/media/Sujeet_Kumar_Resume.d4bd341ac81f7756b657.pdf",
+    "static/media/home-address.png": "/static/media/home-address.38c286a5dd7e796c0a21.png",
     "index.html": "/index.html",
     "main.825872d8.css.map": "/static/css/main.825872d8.css.map",
-    "main.736020ca.js.map": "/static/js/main.736020ca.js.map",
-    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+    "main.6fc137a0.js.map": "/static/js/main.6fc137a0.js.map",
+    "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.825872d8.css",
-    "static/js/main.736020ca.js"
+    "static/js/main.6fc137a0.js"
   ]
 }
