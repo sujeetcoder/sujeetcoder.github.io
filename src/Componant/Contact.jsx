@@ -3,7 +3,7 @@ import { yellow } from "../theme/color"
 import { ToastExample } from "../toast/ToastContact"
 import { fontStyle } from "./fontStyle"
 import resume from "../pdf/Sujeet_Kumar_Resume.pdf"
-
+import homeImg from "../Img/home-address.png"
 
 
 export const Contact = () => {
@@ -14,7 +14,7 @@ export const Contact = () => {
             <Text style={fontStyle} mb="20px" >Contact</Text>
             <SimpleGrid columns={[1,2,2,3,3]} gap="5%" mb={["200px","100px","70px","60px"]}>
            {/*  <ToastExample des="Vill- Behari Chapariya Tola,P.O-Rampur,P.S-Bhangaha,Bettiah, Bihar, India" name='Address' >  */}       <Box borderRadius="10px" bgColor="white" >
-                    <Image w="70px" h="70px" src="https://cdn4.vectorstock.com/i/1000x1000/33/28/location-icon-map-address-geographical-position-vector-29053328.jpg" />
+                    <Image w="70px" h="70px" src={homeImg} />
                     <Text>Bettiah, Bihar, India</Text>
                 </Box> {/* </ToastExample> */}
               <a href="tel:+917261861074">  <Box borderRadius="10px" bgColor="white" >
@@ -36,7 +36,7 @@ export const Contact = () => {
                 </Box> </a>
 
                 <a target="_blank" href="https://twitter.com/sujeetcoder"> <Box borderRadius="10px" bgColor="white" >
-                    <Image w="90px" h="70px" src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c53e.png" />
+                    <Image w="90px" h="70px" src="https://pbs.twimg.com/profile_images/1683899100922511378/5lY42eHs_400x400.jpg" />
                     <Text>Twitter</Text>
                 </Box> </a>
 

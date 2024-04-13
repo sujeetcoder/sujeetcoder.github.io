@@ -20,7 +20,7 @@ import resume from "../pdf/Sujeet_Kumar_Resume.pdf"
 const Navbar = () => {
     const [navMid] = useMediaQuery('(min-width: 800px)')
     const toggleClick2 = () => {
-      window.open('https://drive.google.com/file/d/1mAXvUM_FT60NaGoP8ERlny-sripoR6Eu/view?usp=share_link')
+      window.open('https://drive.google.com/file/d/11E4L8vzhwp55kqcFKRBC8QJOV1LmBFqz/view?usp=sharing')
     }
    
 

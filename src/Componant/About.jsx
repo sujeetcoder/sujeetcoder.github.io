@@ -9,7 +9,9 @@ const About = () => {
 
 
     return (
-        <Box >
+        <Box 
+          mt={"-95px"}
+        >
         
         <Text  style={fontStyle}>About Me</Text>
         <Box id="about"  w={["98%","95%","70%","60%","50%"]}>
