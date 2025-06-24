@@ -20,6 +20,16 @@ const HomePage = () => {
             <Navbar />
             <Box padding="30px 5%">
                 <Home />
+                <Box><script type="text/javascript">
+	atOptions = {
+		'key' : '0d86570bcc2b7caad76bdf2df23c0254',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/0d86570bcc2b7caad76bdf2df23c0254/invoke.js"></script></Box>
                 <Image
                     onClick={() => toggleClick("home")}
                     src={arrow}
@@ -35,6 +45,7 @@ const HomePage = () => {
                 <Skills />
                 <Projects />
                 <Contact />
+                <a href="https://www.profitableratecpm.com/dauj0998h?key=28626388f1ace16b380d7adc1ef4b1e9" >Mystery Box 🎁 </a>
                 <HireMe />
 
 
