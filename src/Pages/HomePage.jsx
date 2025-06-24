@@ -17,18 +17,8 @@ import { useMedia } from "../MediaQuery/UseMedia.js";
 
 
 const HomePage = () => {
-    // Home, about me, skill, project, contact & resume
-
-    const { smallScreen, mediumScreen, midBr } = useMedia()
-    // console.log("midBr", midBr)
-
-    /* useEffect(() => {
-      console.log("midBr", midBr, smallScreen)
+   
     
-      
-    }, [midBr,smallScreen]) */
-    
-
 
     useEffect(() => {
         /* banner */
@@ -45,7 +35,7 @@ const HomePage = () => {
         /* short ad */
         let ads2 = document.createElement("script")
             ads2.type = "text/javascript"
-            ads2.append("atOptions = {'key' : '923423887025a4254987561267175c43','format' : 'iframe','height' : 250,'width' : 300,'params' : {} }")
+            ads2.append("atOptions = {'key' : '923423887025a4254987561267175c43','format' : 'iframe','height' : 250,'width' : 300,'params' : {} };")
         
             let ads3 = document.createElement("script")
             ads3.type = "text/javascript"
@@ -81,7 +71,7 @@ const HomePage = () => {
 
 
 
-            if (smallScreen || midBr) {
+            if (window.innerWidth <= "750") {
                 ad1 && ad1.append(ads2)
                 ad1 && ad1.append(ads3)
             } else {
@@ -96,7 +86,7 @@ const HomePage = () => {
             ad10 && ad10.append(ads11)
         
         return () => {
-            if (smallScreen || midBr) {
+            if (window.innerWidth <= "750") {
                 ad1 && ad1.remove(ads3)
                 ad1 && ad1.remove(ads2)
             } else {
@@ -123,7 +113,6 @@ const HomePage = () => {
                 <Home />
             <Box mt={"45px"} id="ad1" >
                 {/* ads */}
-                {smallScreen || midBr ? <Text>tre</Text> : <Text>false</Text>}
             </Box>
             <Link w={"100%"} mt={"45px"} textAlign={"center"} href="https://inanebinding.com/ijv89mppsg?key=bdc1e37665b3c37db27b3d329e4b3c82" >Mystery Box 1 🎁 </Link>
                 <Image
