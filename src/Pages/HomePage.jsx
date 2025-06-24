@@ -22,24 +22,15 @@ const HomePage = () => {
 
     useEffect(() => {
         /* banner */
-        /* long ad */
-       /*  let ads = document.createElement("script")
-            ads.type = "text/javascript"
-            ads.append("atOptions = {'key' : '0d86570bcc2b7caad76bdf2df23c0254','format' : 'iframe','height' : 90,'width' : 728,'params' : {} };")
-        
+       /*short banner 1  */
+            let ad1 = document.querySelector("#ad1")
             let ads1 = document.createElement("script")
             ads1.type = "text/javascript"
-            ads1.src = "//inanebinding.com/0d86570bcc2b7caad76bdf2df23c0254/invoke.js" */
-            
-            /* short ad */
-            let ad1 = document.querySelector("#ad1")
-        let ads2 = document.createElement("script")
-            ads2.type = "text/javascript"
-            ads2.append("atOptions = {'key' : '923423887025a4254987561267175c43','format' : 'iframe','height' : 250,'width' : 300,'params' : {} };")
+            ads1.append("atOptions = {'key' : '0aada14e31074ae8cfd36ee385be8902','format' : 'iframe','height' : 50,'width' : 320,'params' : {} }")
         
-            let ads3 = document.createElement("script")
-            ads3.type = "text/javascript"
-            ads3.src = "//inanebinding.com/923423887025a4254987561267175c43/invoke.js"
+            let ads2 = document.createElement("script")
+            ads2.type = "text/javascript"
+            ads2.src = "//inanebinding.com/0aada14e31074ae8cfd36ee385be8902/invoke.js"
 /* social bar */
             let ad2 = document.querySelector("#ad2")
 
@@ -71,8 +62,8 @@ const HomePage = () => {
 
 
 
+            ad1 && ad1.append(ads1)
             ad1 && ad1.append(ads2)
-            ad1 && ad1.append(ads3)
             ad2 && ad2.append(ads4)
             ad3 && ad3.append(ads5)
             ad3 && ad3.append(ads6)
@@ -80,8 +71,8 @@ const HomePage = () => {
             ad10 && ad10.append(ads11)
         
         return () => {
+            ad1 && ad1.remove(ads1)
             ad1 && ad1.remove(ads2)
-            ad1 && ad1.remove(ads3)
             ad2 && ad2.remove(ads4)
             ad3 && ad3.remove(ads5)
             ad3 && ad3.remove(ads6)
@@ -101,10 +92,10 @@ const HomePage = () => {
             <Navbar />
             <Box padding="30px 5%">
                 <Home />
+            <Text><Link w={"100%"} mt={"45px"} textAlign={"center"} href="https://inanebinding.com/ijv89mppsg?key=bdc1e37665b3c37db27b3d329e4b3c82" >Mystery Box 1 🎁 </Link></Text>
             <Box mt={"45px"} id="ad1" >
                 {/* ads */}
             </Box>
-            <Link w={"100%"} mt={"45px"} textAlign={"center"} href="https://inanebinding.com/ijv89mppsg?key=bdc1e37665b3c37db27b3d329e4b3c82" >Mystery Box 1 🎁 </Link>
                 <Image
                     onClick={() => toggleClick("home")}
                     src={arrow}
