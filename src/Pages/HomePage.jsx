@@ -20,8 +20,14 @@ const HomePage = () => {
     // Home, about me, skill, project, contact & resume
 
     const { smallScreen, mediumScreen, midBr } = useMedia()
+    // console.log("midBr", midBr)
 
-
+    /* useEffect(() => {
+      console.log("midBr", midBr, smallScreen)
+    
+      
+    }, [midBr,smallScreen]) */
+    
 
 
     useEffect(() => {
@@ -63,30 +69,45 @@ const HomePage = () => {
             ads6.id = "container-428ae98a1b79aae0886bad71fdcbff66"
 
 
+            /*short banner 2  */
+            let ad10 = document.querySelector("#ad10")
+            let ads10 = document.createElement("script")
+            ads10.type = "text/javascript"
+            ads10.append("atOptions = {'key' : '617062c0f84a72cf0c30663f2a9759d6','format' : 'iframe','height' : 300,'width' : 160,'params' : {} }")
+        
+            let ads11 = document.createElement("script")
+            ads11.type = "text/javascript"
+            ads11.src = "//inanebinding.com/617062c0f84a72cf0c30663f2a9759d6/invoke.js"
 
-            if (smallScreen) {
-                ad1.append(ads3)
-                ad1.append(ads2)
+
+
+            if (smallScreen || midBr) {
+                ad1 && ad1.append(ads2)
+                ad1 && ad1.append(ads3)
             } else {
-                ad1.append(ads)
-                ad1.append(ads1)
+                ad1 && ad1.append(ads)
+                ad1 && ad1.append(ads1)
 
             }
-            ad2.append(ads4)
-            ad3.append(ads5)
-            ad3.append(ads6)
+            ad2 && ad2.append(ads4)
+            ad3 && ad3.append(ads5)
+            ad3 && ad3.append(ads6)
+            ad10 && ad10.append(ads10)
+            ad10 && ad10.append(ads11)
         
         return () => {
-            if (smallScreen) {
-                ad1.remove(ads3)
-                ad1.remove(ads2)
+            if (smallScreen || midBr) {
+                ad1 && ad1.remove(ads3)
+                ad1 && ad1.remove(ads2)
             } else {
-                ad1.remove(ads)
-                ad1.remove(ads1)
+                ad1 && ad1.remove(ads)
+                ad1 && ad1.remove(ads1)
             }
-            ad2.remove(ads4)
-            ad3.remove(ads5)
-            ad3.remove(ads6)
+            ad2 && ad2.remove(ads4)
+            ad3 && ad3.remove(ads5)
+            ad3 && ad3.remove(ads6)
+            ad10 && ad10.remove(ads10)
+            ad10 && ad10.remove(ads11)
         }
     }, [])
 
@@ -100,10 +121,11 @@ const HomePage = () => {
             <Navbar />
             <Box padding="30px 5%">
                 <Home />
-            <Box mt={"35px"} id="ad1" >
+            <Box mt={"45px"} id="ad1" >
                 {/* ads */}
-                
+                {smallScreen || midBr ? <Text>tre</Text> : <Text>false</Text>}
             </Box>
+            <Link w={"100%"} mt={"45px"} textAlign={"center"} href="https://inanebinding.com/ijv89mppsg?key=bdc1e37665b3c37db27b3d329e4b3c82" >Mystery Box 1 🎁 </Link>
                 <Image
                     onClick={() => toggleClick("home")}
                     src={arrow}
@@ -121,7 +143,10 @@ const HomePage = () => {
                 {/* ads */}
             </Box>
                 <Projects />
-                <Link w={"100%"} textAlign={"center"} href="https://www.profitableratecpm.com/pd5iii80?key=94c3cae02b6c879d6221264036d5952d" >Mystery Box 🎁 </Link>
+                <Text pt={["50px", "55px", "20px", "5px"]} ><Link w={"100%"}  textAlign={"center"} href="https://inanebinding.com/juwavahq?key=ef8ae0933373bb302a36b21ec43d1e67" >Mystery Box 2 🎁 </Link></Text> 
+               <Box mt={"35px"} id="ad10" >
+                {/* ads */}
+            </Box>
                 <Contact />
                 
                 <HireMe />
@@ -133,10 +158,11 @@ const HomePage = () => {
                 <p style={{ marginTop: "60px" }} align="center"  >
                     <img src="https://readme-typing-svg.demolab.com/?lines=Thanks For Visit..... !&font=Fira%20Code&center=true&width=580&height=45&color=f20353&vCenter=true&size=22&pause=1500" />
                 </p>
-                <Box mt={"35px"} id="ad2" >
-                {/* ads */}
-            </Box>
+                
                 <Text mt="50px"   >All copyrights reserved to © Sujeet Kumar (sujeetcoder) </Text>
+            </Box>
+            <Box mt={"35px"} id="ad2" >
+                {/* ads */}
             </Box>
         </Box>
         </>
