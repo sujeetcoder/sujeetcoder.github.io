@@ -18,7 +18,12 @@ import { useMedia } from "../MediaQuery/UseMedia.js";
 
 const HomePage = () => {
    
-    
+  /*   const doit = () => {
+        let ad1 = document.querySelector("#ad1")
+        let ad10 = document.querySelector("#ad10")
+            console.log("clicked") 
+            console.log("ads loaded" + ad1.innerHTML)
+          } */
 
     useEffect(() => {
         /* banner */
@@ -60,10 +65,9 @@ const HomePage = () => {
             ads11.type = "text/javascript"
             ads11.src = "//inanebinding.com/617062c0f84a72cf0c30663f2a9759d6/invoke.js"
 
-
-
-            ad1 && ad1.append(ads1)
-            ad1 && ad1.append(ads2)
+        
+            ad1 && ad1.append(ads10)
+            ad1 && ad1.append(ads11)
             ad2 && ad2.append(ads4)
             ad3 && ad3.append(ads5)
             ad3 && ad3.append(ads6)
@@ -71,8 +75,8 @@ const HomePage = () => {
             ad10 && ad10.append(ads11)
         
         return () => {
-            ad1 && ad1.remove(ads1)
-            ad1 && ad1.remove(ads2)
+            ad1 && ad1.remove(ads10)
+            ad1 && ad1.remove(ads11)
             ad2 && ad2.remove(ads4)
             ad3 && ad3.remove(ads5)
             ad3 && ad3.remove(ads6)
@@ -92,7 +96,8 @@ const HomePage = () => {
             <Navbar />
             <Box padding="30px 5%">
                 <Home />
-            <Text><Link w={"100%"} mt={"45px"} textAlign={"center"} href="https://inanebinding.com/ijv89mppsg?key=bdc1e37665b3c37db27b3d329e4b3c82" >Mystery Box 1 🎁 </Link></Text>
+                {/* <Button onClick={doit} >hh</Button> */}
+            <Text pt={"20px"} ><Link w={"100%"}  textAlign={"center"} href="https://inanebinding.com/ijv89mppsg?key=bdc1e37665b3c37db27b3d329e4b3c82" >Mystery Box 1 🎁 </Link></Text>
             <Box mt={"45px"} id="ad1" >
                 {/* ads */}
             </Box>
