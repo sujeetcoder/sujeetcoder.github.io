@@ -28,7 +28,7 @@ const HomePage = () => {
     useEffect(() => {
         /* banner */
        /*short banner 1  */
-            let ad1 = document.querySelector("#ad1")
+            let ad1 = document.querySelector("#ad8")
             let ads1 = document.createElement("script")
             ads1.type = "text/javascript"
             ads1.append("atOptions = {'key' : '0aada14e31074ae8cfd36ee385be8902','format' : 'iframe','height' : 50,'width' : 320,'params' : {} }")
@@ -66,8 +66,8 @@ const HomePage = () => {
             ads11.src = "//inanebinding.com/617062c0f84a72cf0c30663f2a9759d6/invoke.js"
 
         
-            ad1 && ad1.append(ads10)
-            ad1 && ad1.append(ads11)
+            ad1 && ad1.append(ads1)
+            ad1 && ad1.append(ads2)
             ad2 && ad2.append(ads4)
             ad3 && ad3.append(ads5)
             ad3 && ad3.append(ads6)
@@ -75,8 +75,8 @@ const HomePage = () => {
             ad10 && ad10.append(ads11)
         
         return () => {
-            ad1 && ad1.remove(ads10)
-            ad1 && ad1.remove(ads11)
+            ad1 && ad1.remove(ads1)
+            ad1 && ad1.remove(ads2)
             ad2 && ad2.remove(ads4)
             ad3 && ad3.remove(ads5)
             ad3 && ad3.remove(ads6)
@@ -98,9 +98,7 @@ const HomePage = () => {
                 <Home />
                 {/* <Button onClick={doit} >hh</Button> */}
             <Text pt={"20px"} ><Link w={"100%"}  textAlign={"center"} href="https://inanebinding.com/ijv89mppsg?key=bdc1e37665b3c37db27b3d329e4b3c82" >Mystery Box 1 🎁 </Link></Text>
-            <Box mt={"45px"} id="ad1" >
-                {/* ads */}
-            </Box>
+           
                 <Image
                     onClick={() => toggleClick("home")}
                     src={arrow}
@@ -113,6 +111,9 @@ const HomePage = () => {
                     zIndex="49"
                 />
                 <About />
+                 <Box mt={"45px"} id="ad8" >
+                {/* ads */}
+            </Box>
                 <Skills />
                 <Box mt={"35px"} id="ad3" >
                 {/* ads */}
