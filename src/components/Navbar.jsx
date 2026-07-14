@@ -46,9 +46,9 @@ export default function Navbar({ theme, toggleTheme }) {
         animate={{ y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
         className={cn(
-          "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+          "fixed top-0 left-0 right-0 z-50 transition-all duration-300 navbar-border",
           scrolled
-            ? "border-b border-surface-200/80 bg-white/80 shadow-sm backdrop-blur-xl dark:border-surface-800/80 dark:bg-surface-950/80"
+            ? "border-b-0 bg-white/80 shadow-sm backdrop-blur-xl dark:bg-surface-950/80 scrolled"
             : "bg-transparent"
         )}
       >

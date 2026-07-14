@@ -1,3 +1,5 @@
+import { assets } from "../utils/allAssets";
+
 export const seoData = {
   title: "Sujeet Kumar — Full Stack MERN Developer & Founder of Emrift",
   description:
@@ -17,7 +19,7 @@ export const seoData = {
     "full stack MERN",
   ],
   url: "https://sujeetcoder.github.io",
-  image: "/images/og-image.png",
+  image: assets.ogImage,
   siteName: "Sujeet Kumar — Portfolio",
   twitterHandle: "@sujeetcoder",
   locale: "en_IN",

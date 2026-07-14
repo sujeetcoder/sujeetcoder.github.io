@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:is(.dark *));
+
 @theme {
   --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
@@ -74,6 +76,49 @@
   .card-hover {
     @apply hover:border-primary-200 hover:shadow-md hover:-translate-y-0.5
       dark:hover:border-primary-800 dark:hover:shadow-primary-500/5;
+  }
+}
+
+@layer components {
+  .navbar-border {
+    position: relative;
+  }
+
+  .navbar-border::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      var(--color-primary-400),
+      var(--color-primary-500),
+      #8b5cf6,
+      #06b6d4,
+      var(--color-primary-500),
+      var(--color-primary-400),
+      transparent
+    );
+    background-size: 200% 100%;
+    animation: navbar-shimmer 3s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .navbar-border.scrolled::after {
+    opacity: 1;
+  }
+
+  @keyframes navbar-shimmer {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
   }
 }
 

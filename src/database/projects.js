@@ -1,3 +1,5 @@
+import { assets } from "../utils/allAssets";
+
 export const projects = [
   {
     id: "emrift",
@@ -13,7 +15,7 @@ export const projects = [
     githubLink: "",
     caseStudyLink: "",
     featured: true,
-    image: "/images/projects/emrift.png",
+    image: assets.projects.emrift,
     status: "Live",
   },
   {
@@ -27,10 +29,10 @@ export const projects = [
     outcome: "A polished, recruiter-ready portfolio that communicates both technical depth and founder credibility, easily maintainable through structured data files.",
     techStack: ["React", "Vite", "Tailwind CSS", "Framer Motion", "React Router", "Lucide Icons"],
     liveLink: "https://sujeetcoder.github.io",
-    githubLink: "https://github.com/sujeetcoder/sujeetcoder.github.io",
+    githubLink: "https://github.com/sujeetcoder",
     caseStudyLink: "",
     featured: false,
-    image: "/images/projects/portfolio.png",
+    image: assets.projects.portfolio,
     status: "Live",
   },
 ];

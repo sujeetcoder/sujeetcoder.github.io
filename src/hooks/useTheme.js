@@ -1,14 +1,14 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
+
+function getInitialTheme() {
+  if (typeof window === "undefined") return "light";
+  const stored = localStorage.getItem("portfolio-theme");
+  if (stored === "dark" || stored === "light") return stored;
+  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+}
 
 export function useTheme() {
-  const [theme, setTheme] = useState(() => {
-    if (typeof window !== "undefined") {
-      const stored = localStorage.getItem("portfolio-theme");
-      if (stored) return stored;
-      return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-    }
-    return "light";
-  });
+  const [theme, setTheme] = useState(getInitialTheme);
 
   useEffect(() => {
     const root = document.documentElement;
@@ -20,7 +20,9 @@ export function useTheme() {
     localStorage.setItem("portfolio-theme", theme);
   }, [theme]);
 
-  const toggleTheme = () => setTheme((prev) => (prev === "dark" ? "light" : "dark"));
+  const toggleTheme = useCallback(() => {
+    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
+  }, []);
 
   return { theme, toggleTheme, isDark: theme === "dark" };
 }

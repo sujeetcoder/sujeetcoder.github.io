@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#1e293b"/>
+  <rect x="40" y="30" width="720" height="390" rx="12" fill="#0f172a"/>
+  <rect x="60" y="50" width="200" height="20" rx="4" fill="#334155"/>
+  <rect x="60" y="80" width="680" height="8" rx="4" fill="#1e293b"/>
+  <rect x="60" y="100" width="680" height="8" rx="4" fill="#1e293b"/>
+  <rect x="60" y="140" width="300" height="240" rx="8" fill="#1e293b"/>
+  <rect x="380" y="140" width="360" height="110" rx="8" fill="#1e293b"/>
+  <rect x="380" y="270" width="360" height="110" rx="8" fill="#1e293b"/>
+  <text x="400" y="440" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" fill="#475569">Replace with Emrift screenshot</text>
+</svg>

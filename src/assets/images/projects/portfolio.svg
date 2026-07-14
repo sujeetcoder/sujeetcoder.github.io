@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#f8fafc"/>
+  <rect x="40" y="30" width="720" height="390" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+  <rect x="60" y="50" width="160" height="20" rx="4" fill="#3b82f6"/>
+  <rect x="60" y="80" width="680" height="8" rx="4" fill="#e2e8f0"/>
+  <rect x="60" y="100" width="500" height="8" rx="4" fill="#e2e8f0"/>
+  <rect x="60" y="140" width="320" height="240" rx="8" fill="#eff6ff"/>
+  <rect x="400" y="140" width="340" height="110" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+  <rect x="400" y="270" width="340" height="110" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="400" y="440" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" fill="#94a3b8">Replace with portfolio screenshot</text>
+</svg>
