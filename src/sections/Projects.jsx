@@ -40,6 +40,15 @@ export default function Projects() {
                   className="card-base card-hover group relative overflow-hidden p-0"
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-primary-500/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 dark:from-primary-500/10" />
+                  {project.image && (
+                    <div className="relative aspect-video w-full overflow-hidden border-b border-surface-200 dark:border-surface-800">
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                    </div>
+                  )}
                   <div className="relative p-6 sm:p-8">
                     <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                       <div className="flex-1">
@@ -144,11 +153,20 @@ export default function Projects() {
                   transition={{ duration: 0.25 }}
                   className="grid gap-4 sm:grid-cols-2"
                 >
-                  {filteredProjects.map((project) => (
+                   {filteredProjects.map((project) => (
                     <div
                       key={project.id}
                       className="card-base card-hover group"
                     >
+                      {project.image && (
+                        <div className="relative mb-4 aspect-video w-full overflow-hidden rounded-xl border border-surface-200 dark:border-surface-800">
+                          <img
+                            src={project.image}
+                            alt={project.title}
+                            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                          />
+                        </div>
+                      )}
                       <div className="flex items-center justify-between">
                         <span className="text-xs font-semibold text-primary-600 dark:text-primary-400">
                           {project.type}

@@ -1,7 +1,7 @@
-import profileImg from "../assets/images/profile.svg";
-import emriftProjectImg from "../assets/images/projects/emrift.svg";
-import portfolioProjectImg from "../assets/images/projects/portfolio.svg";
-import ogImageImg from "../assets/images/og-image.svg";
+import profileImg from "../assets/images/profile.png";
+import emriftProjectImg from "../assets/images/projects/emrift.png";
+import portfolioProjectImg from "../assets/images/projects/portfolio.png";
+import ogImageImg from "../assets/images/og-image.png";
 
 export const assets = {
   profile: profileImg,

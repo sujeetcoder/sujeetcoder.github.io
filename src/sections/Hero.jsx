@@ -65,98 +65,109 @@ export default function Hero() {
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="mx-auto max-w-4xl"
+            className="mx-auto max-w-5xl"
           >
-            <motion.div variants={itemVariants} className="mb-6">
-              <div className="inline-flex items-center gap-2 rounded-full border border-primary-200/60 bg-primary-50 px-4 py-1.5 text-sm font-medium text-primary-700 dark:border-primary-800/60 dark:bg-primary-950/50 dark:text-primary-300">
-                <span className="relative flex h-2 w-2">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
-                  <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500"></span>
-                </span>
-                Available for opportunities
-              </div>
-            </motion.div>
-
-            <motion.h1
-              variants={itemVariants}
-              className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
-            >
-              <span className="text-surface-900 dark:text-white">
-                {personalInfo.name.split(" ")[0]}{" "}
-              </span>
-              <span className="text-gradient">
-                {personalInfo.name.split(" ").slice(1).join(" ")}
-              </span>
-            </motion.h1>
-
-            <motion.p
-              variants={itemVariants}
-              className="mt-4 text-xl font-semibold text-surface-700 dark:text-surface-300 sm:text-2xl"
-            >
-              {personalInfo.title}
-            </motion.p>
-
-            <motion.p
-              variants={itemVariants}
-              className="mt-6 max-w-2xl text-lg leading-relaxed text-surface-500 dark:text-surface-400"
-            >
-              {personalInfo.shortIntro}
-            </motion.p>
-
-            <motion.div
-              variants={itemVariants}
-              className="mt-2 flex items-center gap-2 text-sm text-surface-400 dark:text-surface-500"
-            >
-              <MapPin size={14} />
-              <span>{personalInfo.location}</span>
-            </motion.div>
-
-            <motion.div
-              variants={itemVariants}
-              className="mt-8 flex flex-wrap gap-4"
-            >
-              <a
-                href="#projects"
-                onClick={scrollToProjects}
-                className="btn-primary"
+            <div className="flex flex-col items-center gap-12 lg:flex-row lg:items-center lg:gap-10">
+              <motion.div
+                variants={itemVariants}
+                className="order-2 flex-1 lg:order-1"
               >
-                <ExternalLink size={16} />
-                View Projects
-              </a>
-              <a
-                href="#contact"
-                onClick={scrollToContact}
-                className="btn-secondary"
-              >
-                Get In Touch
-              </a>
-              {personalInfo.resumeLink && (
-                <a
-                  href={personalInfo.resumeLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-secondary"
-                >
-                  <Download size={16} />
-                  Resume
-                </a>
-              )}
-            </motion.div>
+                <div className="mb-6">
+                  <div className="inline-flex items-center gap-2 rounded-full border border-primary-200/60 bg-primary-50 px-4 py-1.5 text-sm font-medium text-primary-700 dark:border-primary-800/60 dark:bg-primary-950/50 dark:text-primary-300">
+                    <span className="relative flex h-2 w-2">
+                      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
+                      <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500"></span>
+                    </span>
+                    Available for opportunities
+                  </div>
+                </div>
 
-            <motion.div variants={itemVariants} className="mt-8 flex gap-3">
-              {socialLinks.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex h-10 w-10 items-center justify-center rounded-xl border border-surface-200 text-surface-500 transition-all hover:border-primary-300 hover:text-primary-600 dark:border-surface-700 dark:text-surface-400 dark:hover:border-primary-700 dark:hover:text-primary-400"
-                  aria-label={link.name}
-                >
-                  <span className="text-xs font-bold">{iconMap[link.icon] || link.name[0]}</span>
-                </a>
-              ))}
-            </motion.div>
+                <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+                  <span className="text-surface-900 dark:text-white">
+                    {personalInfo.name.split(" ")[0]}{" "}
+                  </span>
+                  <span className="text-gradient">
+                    {personalInfo.name.split(" ").slice(1).join(" ")}
+                  </span>
+                </h1>
+
+                <p className="mt-4 text-xl font-semibold text-surface-700 dark:text-surface-300 sm:text-2xl">
+                  {personalInfo.title}
+                </p>
+
+                <p className="mt-6 max-w-2xl text-lg leading-relaxed text-surface-500 dark:text-surface-400">
+                  {personalInfo.shortIntro}
+                </p>
+
+                <div className="mt-2 flex items-center gap-2 text-sm text-surface-400 dark:text-surface-500">
+                  <MapPin size={14} />
+                  <span>{personalInfo.location}</span>
+                </div>
+
+                <div className="mt-8 flex flex-wrap gap-4">
+                  <a
+                    href="#projects"
+                    onClick={scrollToProjects}
+                    className="btn-primary"
+                  >
+                    <ExternalLink size={16} />
+                    View Projects
+                  </a>
+                  <a
+                    href="#contact"
+                    onClick={scrollToContact}
+                    className="btn-secondary"
+                  >
+                    Get In Touch
+                  </a>
+                  {personalInfo.resumeLink && (
+                    <a
+                      href={personalInfo.resumeLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-secondary"
+                    >
+                      <Download size={16} />
+                      Resume
+                    </a>
+                  )}
+                </div>
+
+                <div className="mt-8 flex gap-3">
+                  {socialLinks.map((link) => (
+                    <a
+                      key={link.name}
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex h-10 w-10 items-center justify-center rounded-xl border border-surface-200 text-surface-500 transition-all hover:border-primary-300 hover:text-primary-600 dark:border-surface-700 dark:text-surface-400 dark:hover:border-primary-700 dark:hover:text-primary-400"
+                      aria-label={link.name}
+                    >
+                      <span className="text-xs font-bold">{iconMap[link.icon] || link.name[0]}</span>
+                    </a>
+                  ))}
+                </div>
+              </motion.div>
+
+              <motion.div
+                variants={itemVariants}
+                className="order-1 flex-shrink-0 lg:order-2"
+              >
+                <div className="relative">
+                  <div className="absolute -inset-4 rounded-full bg-gradient-to-br from-primary-400/20 to-primary-600/20 blur-2xl" />
+                  <div className="relative h-48 w-48 overflow-hidden rounded-full border-4 border-white shadow-xl dark:border-surface-800 sm:h-56 sm:w-56 lg:h-64 lg:w-64">
+                    <img
+                      src={personalInfo.profileImage}
+                      alt={personalInfo.name}
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                  <div className="absolute -bottom-2 -right-2 flex h-12 w-12 items-center justify-center rounded-full border-4 border-white bg-green-500 text-white shadow-md dark:border-surface-800">
+                    <span className="text-lg">✓</span>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
 
             <motion.div
               variants={itemVariants}
