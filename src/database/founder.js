@@ -1,0 +1,32 @@
+export const founderData = {
+  startupName: "Emrift",
+  founderTitle: "Founder & CEO",
+  tagline: "Building the infrastructure for esports tournament operations.",
+  vision: "To become the go-to platform for esports tournament management — making it easy for organizers to run professional, scalable events without the operational chaos.",
+  problem: "Esports tournament management is fragmented across spreadsheets, Discord messages, manual payment tracking, and scattered tools. Organizers spend more time on logistics than on growing their events.",
+  solution: "Emrift brings tournament operations into a single, unified platform — from team registration and bracket management to Discord bot automation and Razorpay-powered billing — so organizers can focus on what matters: running great events.",
+  features: [
+    "Team creation, registration, and roster management",
+    "Tournament creation with dynamic rules, brackets, and scheduling",
+    "Discord bot for automated workflows, notifications, and team operations",
+    "Admin dashboard for managing tournaments, teams, and users",
+    "Razorpay integration for subscriptions, entry fees, and payments",
+    "Role-based access control and secure authentication",
+    "Real-time tournament status updates and match tracking",
+    "Scalable architecture built for growth and high-traffic events",
+  ],
+  techArchitecture: {
+    frontend: "React.js with Tailwind CSS for a responsive, modern UI",
+    backend: "Node.js + Express.js with RESTful API architecture",
+    database: "MongoDB with Mongoose for flexible data modeling",
+    integrations: "Discord.js bot, Razorpay payments, JWT authentication",
+    deployment: "Cloud-hosted with CI/CD-ready infrastructure",
+  },
+  metrics: [
+    { label: "Full Stack Modules", value: "10+" },
+    { label: "Discord Bot Commands", value: "20+" },
+    { label: "API Endpoints", value: "50+" },
+    { label: "Hours of Development", value: "1000+" },
+  ],
+  founderQuote: "Building Emrift taught me that great software isn't just about code — it's about understanding the problem deeply, designing systems that scale, and taking ownership of the entire product lifecycle.",
+};
