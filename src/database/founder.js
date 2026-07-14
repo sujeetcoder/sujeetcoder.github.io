@@ -28,5 +28,5 @@ export const founderData = {
     { label: "API Endpoints", value: "50+" },
     { label: "Hours of Development", value: "1000+" },
   ],
-  founderQuote: "Building Emrift taught me that great software isn't just about code — it's about understanding the problem deeply, designing systems that scale, and taking ownership of the entire product lifecycle.",
+  founderQuote: "Building Emrift taught me that great software isn't just about code it's about understanding the problem deeply, designing systems that scale, and taking ownership of the entire product lifecycle.",
 };

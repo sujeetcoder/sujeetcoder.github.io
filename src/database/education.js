@@ -13,4 +13,18 @@ export const education = [
       "Participated in hackathons and coding competitions",
     ],
   },
+  {
+    id: 2,
+    degree: "ISC (Class 12th)",
+    field: "physics, Chemistry, Mathematics",
+    institution: "RLSY Collaege, West Champaran, Bihar",
+    location: "West Champaran, Bihar, India",
+    duration: "2018 — 2020",
+    summary: "Focused on physics, chemistry, and mathematics, laying a strong foundation for problem-solving and analytical thinking.",
+    highlights: [
+      "Coursework in Physics, Chemistry, and Mathematics",
+      "Active in science clubs and math competitions",
+      "Participated in inter-school science fairs and Olympiads",
+    ],
+  },
 ];

@@ -2,10 +2,12 @@ import profileImg from "../assets/images/profile.png";
 import emriftProjectImg from "../assets/images/projects/emrift.png";
 import portfolioProjectImg from "../assets/images/projects/portfolio.png";
 import ogImageImg from "../assets/images/og-image.png";
+import myResume from "../assets/pdf/Sujeet_Kumar_Resume.pdf";
 
 export const assets = {
   profile: profileImg,
   ogImage: ogImageImg,
+  resume: myResume,
   projects: {
     emrift: emriftProjectImg,
     portfolio: portfolioProjectImg,

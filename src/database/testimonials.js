@@ -5,7 +5,7 @@ export const testimonials = [
     role: "Client / Collaborator",
     company: "Organization",
     text: "Testimonial placeholder — replace with a real client, peer, or mentor quote.",
-    avatar: "",
+    avatar: "https://avatars.githubusercontent.com/u/72292317?v=4",
     rating: 5,
   },
 ];

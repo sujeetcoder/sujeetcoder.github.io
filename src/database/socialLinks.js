@@ -19,7 +19,7 @@ export const socialLinks = [
   },
   {
     name: "Discord",
-    url: "https://discord.gg/emrift",
+    url: "https://discord.gg/hHY3P4bvHu",
     icon: "message-circle",
     username: "sujeetcoder",
   },

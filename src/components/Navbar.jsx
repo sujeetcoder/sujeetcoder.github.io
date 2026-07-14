@@ -78,11 +78,11 @@ export default function Navbar({ theme, toggleTheme }) {
                       : "text-surface-600 hover:text-surface-900 dark:text-surface-400 dark:hover:text-surface-100"
                   )}
                 >
-                  {item.name}
+                  <span className="relative z-10">{item.name}</span>
                   {isActive && (
                     <motion.div
                       layoutId="activeNav"
-                      className="absolute inset-0 rounded-lg bg-primary-50 dark:bg-primary-950/30"
+                      className="absolute inset-0 -z-0 rounded-lg bg-primary-50 dark:bg-primary-950/30"
                       transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                     />
                   )}
